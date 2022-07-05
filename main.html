@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styling.css">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <title>Weather App</title>
 </head>
+
 <body>
-    
-    
+    <div class="menu">
+
+        <a href="#" class="nav">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </a>
+        <div id="sidenav" class="SideNav">
+
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">About</a>
+            <!-- <ul>
+                <li><a herf="#">Home</a></li>
+                <li><a herf="#">Current Weather</a></li>
+                <ul>
+                    <li><a herf="#">News</a></li>
+                </ul>
+                <li><a herf="#">About</a></li>
+            </ul> -->
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+    </script>
+
+
+
     <div class="container">
         <div class="current-info">
 
@@ -22,8 +59,8 @@
                 </div>
 
                 <div class="others" id="current-weather-items">
-                    
-                    
+
+
                 </div>
             </div>
 
@@ -33,7 +70,7 @@
             </div>
         </div>
 
-        
+
     </div>
 
     <div class="future-forecast">
@@ -81,4 +118,5 @@
         </div>
     </div>
 </body>
+
 </html>
